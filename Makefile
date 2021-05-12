@@ -54,3 +54,4 @@ clean:
 		molecule destroy; \
 	)
 	rm -rf .venv
+	rm -rf .cache
