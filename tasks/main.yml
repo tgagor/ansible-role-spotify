@@ -3,9 +3,6 @@
   apt:
     name:
       - apt-transport-https
-      - gpg
-    update_cache: yes
-    cache_valid_time: 300
 
 - name: install Spotify GPG key
   apt_key:

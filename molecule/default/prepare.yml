@@ -1,0 +1,10 @@
+---
+- name: Prepare
+  hosts: all
+  tasks:
+    - name: install Ansible dependencies
+      apt:
+        name:
+          - python-apt
+          - gpg
+        update_cache: yes
