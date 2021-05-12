@@ -11,10 +11,10 @@ platforms:
     image: ubuntu:20.04
   - name: ubuntu-20.10
     image: ubuntu:20.10
-  - name: mint-20
-    image: linuxmintd/mint20-amd64
-  - name: mint-20.1
-    image: linuxmintd/mint20.1-amd64
+  # - name: mint-20
+  #   image: linuxmintd/mint20-amd64
+  # - name: mint-20.1
+  #   image: linuxmintd/mint20.1-amd64
 provisioner:
   name: ansible
 scenario:
