@@ -28,7 +28,7 @@ create-venv: requirements
 	@echo "virtualenv ready."
 
 dependencies:
-	apt install -y python3-pip libssl-dev libffi-dev git python3-venv
+	sudo apt install -y python3-pip libssl-dev libffi-dev git python3-venv
 
 converge:
 	( \
