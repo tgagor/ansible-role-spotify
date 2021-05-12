@@ -5,9 +5,7 @@ driver:
   name: docker
 lint: |
   set -e
-  yamllint .
-  ansible-lint
-  flake8
+  pre-commit run -a
 platforms:
   - name: ubuntu-20.04
     image: ubuntu:20.04
