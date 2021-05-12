@@ -13,14 +13,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-        with:
-          path: spotify
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
       - name: Install dependencies
         run: |
+          make dependencies
           make create-venv
       - name: Test with molecule
         run: |
