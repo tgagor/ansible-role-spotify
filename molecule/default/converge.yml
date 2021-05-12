@@ -1,0 +1,7 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: "Include ansible-role-spotify"
+      include_role:
+        name: "ansible-role-spotify"
