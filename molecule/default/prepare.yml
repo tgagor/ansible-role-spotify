@@ -5,6 +5,6 @@
     - name: install Ansible dependencies
       apt:
         name:
-          - python-apt
+          - python3-apt
           - gpg
         update_cache: yes
