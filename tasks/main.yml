@@ -1,0 +1,20 @@
+---
+- name: prerequisities
+  apt:
+    name: apt-transport-https
+
+- name: install Spotify GPG key
+  apt_key:
+    url: https://download.spotify.com/debian/pubkey_0D811D58.gpg
+    state: present
+
+- name: enable Spotify repo
+  apt_repository:
+    repo: deb http://repository.spotify.com stable non-free
+    filename: /etc/apt/sources.list.d/spotify
+    state: present
+    update_cache: yes
+
+- name: install Spotify
+  apt:
+    name: spotify-client
