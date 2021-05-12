@@ -13,6 +13,7 @@ def test_repo_added(host):
     assert f.exists
     assert f.contains('repository.spotify.com')
 
+
 def test_package_installed(host):
     host.package('spotify-client').is_installed
     host.run('spotify --version').succeeded
