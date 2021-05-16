@@ -1,4 +1,4 @@
-name: lint with pre-commit
+name: lint with pre-commit on PR
 
 on:
   push:
