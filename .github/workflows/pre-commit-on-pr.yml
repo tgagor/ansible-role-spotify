@@ -1,3 +1,4 @@
+---
 name: lint with pre-commit on PR
 
 on:
