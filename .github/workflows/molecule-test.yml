@@ -26,3 +26,7 @@ jobs:
         run: |
           . .venv/bin/activate
           molecule test
+      - name: Import role to Ansible Galaxy`
+        uses: 0x022b/galaxy-role-import-action@v1
+        with:
+          galaxy_api_key: ${{ secrets.GALAXY_API_KEY }}
