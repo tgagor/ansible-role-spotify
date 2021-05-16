@@ -3,7 +3,7 @@ Ansible role for Spotify
 
 This role will install Spotify client on compatible platforms.
 
-[![Molecule Test](https://github.com/tgagor/ansible-role-spotify/actions/workflows/molecule-test.yml/badge.svg)](https://github.com/tgagor/ansible-role-spotify/actions/workflows/molecule-test.yml)
+[![Molecule Test](https://github.com/tgagor/ansible-role-spotify/actions/workflows/test-and-release.yml/badge.svg)](https://github.com/tgagor/ansible-role-spotify/actions/workflows/test-and-release.yml)
 [![Ansible Galaxy](https://img.shields.io/badge/ansible--galaxy-tgagor-spofify.svg)](https://galaxy.ansible.com/tgagor/spotify)
 
 ## Supported systems
