@@ -12,14 +12,17 @@ galaxy_info:
   # If this a Container Enabled role, provide the minimum Ansible Container version.
   # min_ansible_container_version:
 
-  #
-  # platforms is a list of platforms, and each platform has a name and a list of versions.
-  #
   platforms:
   - name: Ubuntu
     versions:
-      - '20.04'
-      - '20.10'
+      - bionic
+      - focal
+      - hirsute
+  - name: Mint
+    versions:
+      - '19.3'
+      - '20'
+      - '20.1'
 
   galaxy_tags:
     - tgagor
