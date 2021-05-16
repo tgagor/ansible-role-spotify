@@ -2,9 +2,8 @@
 galaxy_info:
   role_name: spotify
   namespace: tgagor
-  author: Tomasz Gągor
+  author: Tomasz G.
   description: installs Spotify client on Ubuntu linux
-  # company: your company (optional)
   license: GPLv3
 
   min_ansible_version: 1.2
