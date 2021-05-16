@@ -1,6 +1,6 @@
 ---
 galaxy_info:
-  role_name: tgagor.spotify
+  role_name: spotify
   author: Tomasz Gągor
   description: installs Spotify client on Ubuntu linux
   # company: your company (optional)
