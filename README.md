@@ -25,11 +25,13 @@ There are no dependencies on other roles.
 Example Playbook
 ----------------
 
-Just add to you playbook:
+Just add to you playbook, to install it on `localhost`:
 
 ```yaml
-- name: Example playbook
-  hosts: all
+- hosts: localhost
+  connection: local
+  gather_facts: true
+  become: yes
   tasks:
     - name: Install Spotify client
       include_role:
