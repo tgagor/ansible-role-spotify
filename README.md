@@ -15,7 +15,6 @@ This role will install Spotify client on compatible platforms.
   * 21.04
 * Linux Mint
   * 19.3
-  * 20
   * 20.1
 * Debian
   * 9 (stretch)
