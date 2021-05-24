@@ -1,4 +1,4 @@
-.PHONY: all clean create-venv requirements dependencies converge verify
+.PHONY: all create-venv requirements dependencies converge verify test clean
 
 all: create-venv
 
@@ -9,14 +9,6 @@ all: create-venv
 		python3 -m pip install --upgrade pip && \
 		python3 -m pip install --upgrade setuptools; \
 	)
-
-# .venv:
-# 	( \
-# 		virtualenv .venv && \
-# 		. .venv/bin/activate && \
-# 		python3 -m pip install --upgrade pip && \
-# 		python3 -m pip install --upgrade setuptools; \
-# 	)
 
 requirements: .venv
 	( \
@@ -50,8 +42,10 @@ test:
 
 clean:
 	( \
-		. .venv/bin/activate && \
-		molecule destroy; \
-	)
+		if [ -f .venv/bin/activate ]; then \
+			. .venv/bin/activate && molecule destroy; \
+		fi ; \
+	);
 	rm -rf .venv
 	rm -rf .cache
+	find . -type f -name '*.py[co]' -delete -o -type d -name __pycache__ -delete
